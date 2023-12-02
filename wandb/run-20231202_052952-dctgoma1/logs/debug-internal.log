@@ -1,0 +1,767 @@
+2023-12-02 05:29:52,497 INFO    StreamThr :854863 [internal.py:wandb_internal():86] W&B internal server running at pid: 854863, started at: 2023-12-02 05:29:52.496838
+2023-12-02 05:29:52,498 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status
+2023-12-02 05:29:52,499 INFO    WriterThread:854863 [datastore.py:open_for_write():85] open: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/run-dctgoma1.wandb
+2023-12-02 05:29:52,500 DEBUG   SenderThread:854863 [sender.py:send():380] send: header
+2023-12-02 05:29:52,500 DEBUG   SenderThread:854863 [sender.py:send():380] send: run
+2023-12-02 05:29:52,774 INFO    SenderThread:854863 [dir_watcher.py:__init__():211] watching files in: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files
+2023-12-02 05:29:52,774 INFO    SenderThread:854863 [sender.py:_start_run_threads():1124] run started: dctgoma1 with start time 1701494992.496741
+2023-12-02 05:29:52,777 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: check_version
+2023-12-02 05:29:52,778 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: check_version
+2023-12-02 05:29:52,898 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: run_start
+2023-12-02 05:29:52,907 ERROR   HandlerThread:854863 [gpu.py:is_available():381] Error initializing NVML: RM has detected an NVML/RM version mismatch.
+2023-12-02 05:29:52,907 DEBUG   HandlerThread:854863 [system_info.py:__init__():32] System info init
+2023-12-02 05:29:52,907 DEBUG   HandlerThread:854863 [system_info.py:__init__():47] System info init done
+2023-12-02 05:29:52,907 INFO    HandlerThread:854863 [system_monitor.py:start():194] Starting system monitor
+2023-12-02 05:29:52,908 INFO    SystemMonitor:854863 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-12-02 05:29:52,908 INFO    HandlerThread:854863 [system_monitor.py:probe():214] Collecting system info
+2023-12-02 05:29:52,908 INFO    SystemMonitor:854863 [interfaces.py:start():190] Started cpu monitoring
+2023-12-02 05:29:52,910 INFO    SystemMonitor:854863 [interfaces.py:start():190] Started disk monitoring
+2023-12-02 05:29:52,912 INFO    SystemMonitor:854863 [interfaces.py:start():190] Started memory monitoring
+2023-12-02 05:29:52,912 INFO    SystemMonitor:854863 [interfaces.py:start():190] Started network monitoring
+2023-12-02 05:29:52,949 DEBUG   HandlerThread:854863 [system_info.py:probe():196] Probing system
+2023-12-02 05:29:52,952 DEBUG   HandlerThread:854863 [gitlib.py:_init_repo():56] git repository is invalid
+2023-12-02 05:29:52,952 DEBUG   HandlerThread:854863 [system_info.py:probe():244] Probing system done
+2023-12-02 05:29:52,952 DEBUG   HandlerThread:854863 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-135-generic-x86_64-with-glibc2.17', 'python': '3.8.18', 'heartbeatAt': '2023-12-02T05:29:52.949182', 'startedAt': '2023-12-02T05:29:52.492959', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'host': 'hollyburn', 'username': 'frankyu', 'executable': '/scratch-ssd/frankyu/anaconda3/envs/resnet/bin/python', 'cpu_count': 16, 'cpu_count_logical': 24, 'cpu_freq': {'current': 1117.9687499999998, 'min': 800.0, 'max': 5700.0}, 'cpu_freq_per_core': [{'current': 785.541, 'min': 800.0, 'max': 6500.0}, {'current': 675.408, 'min': 800.0, 'max': 6500.0}, {'current': 611.639, 'min': 800.0, 'max': 6500.0}, {'current': 606.303, 'min': 800.0, 'max': 6500.0}, {'current': 1124.544, 'min': 800.0, 'max': 6700.0}, {'current': 754.642, 'min': 800.0, 'max': 6700.0}, {'current': 945.744, 'min': 800.0, 'max': 6700.0}, {'current': 1037.676, 'min': 800.0, 'max': 6700.0}, {'current': 685.959, 'min': 800.0, 'max': 6500.0}, {'current': 1196.15, 'min': 800.0, 'max': 6500.0}, {'current': 1197.753, 'min': 800.0, 'max': 6500.0}, {'current': 832.395, 'min': 800.0, 'max': 6500.0}, {'current': 762.987, 'min': 800.0, 'max': 6500.0}, {'current': 600.0, 'min': 800.0, 'max': 6500.0}, {'current': 811.735, 'min': 800.0, 'max': 6500.0}, {'current': 700.8, 'min': 800.0, 'max': 6500.0}, {'current': 966.812, 'min': 800.0, 'max': 4000.0}, {'current': 988.178, 'min': 800.0, 'max': 4000.0}, {'current': 978.39, 'min': 800.0, 'max': 4000.0}, {'current': 994.597, 'min': 800.0, 'max': 4000.0}, {'current': 811.427, 'min': 800.0, 'max': 4000.0}, {'current': 845.537, 'min': 800.0, 'max': 4000.0}, {'current': 967.27, 'min': 800.0, 'max': 4000.0}, {'current': 938.249, 'min': 800.0, 'max': 4000.0}], 'disk': {'/': {'total': 97.87200164794922, 'used': 51.96843338012695}}, 'memory': {'total': 62.60167694091797}}
+2023-12-02 05:29:52,952 INFO    HandlerThread:854863 [system_monitor.py:probe():224] Finished collecting system info
+2023-12-02 05:29:52,952 INFO    HandlerThread:854863 [system_monitor.py:probe():227] Publishing system info
+2023-12-02 05:29:52,952 DEBUG   HandlerThread:854863 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-02 05:29:52,953 DEBUG   HandlerThread:854863 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-02 05:29:52,953 DEBUG   HandlerThread:854863 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-12-02 05:29:53,686 DEBUG   HandlerThread:854863 [system_info.py:_save_conda():87] Saving conda packages done
+2023-12-02 05:29:53,687 INFO    HandlerThread:854863 [system_monitor.py:probe():229] Finished publishing system info
+2023-12-02 05:29:53,688 DEBUG   SenderThread:854863 [sender.py:send():380] send: files
+2023-12-02 05:29:53,689 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2023-12-02 05:29:53,691 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:29:53,692 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:29:53,693 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:29:53,776 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_created():271] file/dir created: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/requirements.txt
+2023-12-02 05:29:53,776 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_created():271] file/dir created: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-metadata.json
+2023-12-02 05:29:53,776 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_created():271] file/dir created: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/conda-environment.yaml
+2023-12-02 05:29:53,871 DEBUG   SenderThread:854863 [sender.py:send():380] send: telemetry
+2023-12-02 05:29:54,204 INFO    wandb-upload_0:854863 [upload_job.py:push():131] Uploaded file /tmp/tmpsb1pjqcpwandb/tqtfbv5d-wandb-metadata.json
+2023-12-02 05:29:57,872 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:30:02,873 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:30:07,874 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:30:08,691 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:30:08,691 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:30:08,692 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:30:13,841 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:30:18,842 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:30:23,691 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:30:23,692 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:30:23,692 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:30:24,784 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:30:25,785 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/config.yaml
+2023-12-02 05:30:26,788 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:30:26,789 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:30:26,789 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:30:26,790 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:30:27,785 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_created():271] file/dir created: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:30:27,785 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_created():271] file/dir created: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:30:29,787 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:30:30,831 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:30:35,832 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:30:38,692 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:30:38,692 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:30:38,692 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:30:40,845 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:30:45,846 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:30:50,847 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:30:52,912 DEBUG   SystemMonitor:854863 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-12-02 05:30:52,913 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:30:53,691 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:30:53,692 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:30:53,692 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:30:56,789 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:30:59,712 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:30:59,713 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:30:59,713 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:30:59,713 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:30:59,795 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:31:01,796 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:31:02,714 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:31:07,715 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:31:08,691 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:31:08,691 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:31:08,692 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:31:12,797 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:31:17,797 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:31:22,799 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:31:22,914 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:31:23,691 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:31:23,692 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:31:23,733 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:31:27,855 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:31:32,696 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:31:32,696 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:31:32,697 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:31:32,697 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:31:32,806 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:31:33,697 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:31:35,807 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:31:38,692 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:31:38,692 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:31:38,692 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:31:38,858 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:31:43,858 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:31:48,860 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:31:52,914 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:31:53,692 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:31:53,692 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:31:53,692 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:31:54,812 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:31:59,814 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:32:04,815 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:32:05,779 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:32:05,779 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:32:05,779 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:32:05,780 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:32:05,817 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:32:07,818 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:32:08,692 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:32:08,692 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:32:08,692 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:32:09,846 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:32:14,848 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:32:19,848 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:32:22,915 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:32:23,693 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:32:23,693 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:32:23,694 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:32:25,795 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:32:30,795 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:32:35,796 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:32:38,692 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:32:38,692 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:32:38,693 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:32:38,737 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:32:38,798 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:32:38,798 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:32:38,798 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:32:38,829 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:32:40,799 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:32:41,830 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:32:45,800 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:32:50,800 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:32:52,916 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:32:53,693 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:32:53,693 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:32:53,695 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:32:55,807 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:33:00,809 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:33:05,809 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:33:08,693 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:33:08,693 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:33:08,694 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:33:10,864 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:33:11,701 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:33:11,702 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:33:11,702 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:33:11,702 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:33:11,842 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:33:13,843 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:33:16,746 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:33:21,747 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:33:22,917 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:33:23,693 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:33:23,693 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:33:23,694 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:33:26,884 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:33:31,885 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:33:36,886 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:33:38,694 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:33:38,695 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:33:38,695 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:33:42,792 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:33:44,648 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:33:44,649 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:33:44,649 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:33:44,650 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:33:44,854 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:33:47,855 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:33:48,651 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:33:52,918 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:33:53,693 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:33:53,693 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:33:53,695 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:33:53,822 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:33:58,823 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:34:03,824 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:34:08,693 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:34:08,693 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:34:08,742 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:34:08,837 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:34:13,837 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:34:17,564 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:34:17,565 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:34:17,565 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:34:17,566 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:34:17,865 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:34:19,567 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:34:19,868 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:34:22,918 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:34:23,694 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:34:23,694 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:34:23,695 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:34:24,834 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:34:29,835 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:34:34,836 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:34:38,694 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:34:38,694 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:34:38,695 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:34:39,865 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:34:44,865 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:34:49,866 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:34:50,680 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:34:50,681 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:34:50,681 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:34:50,682 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:34:50,877 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:34:52,918 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:34:53,694 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:34:53,694 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:34:53,694 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:34:53,878 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:34:55,864 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:35:00,864 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:35:05,865 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:35:08,694 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:35:08,694 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:35:08,694 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:35:11,783 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:35:16,785 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:35:21,785 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:35:22,919 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:35:23,694 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:35:23,694 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:35:23,695 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:35:23,710 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:35:23,847 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:35:23,848 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:35:23,849 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:35:23,889 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:35:25,890 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:35:26,850 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:35:31,850 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:35:36,851 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:35:38,695 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:35:38,695 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:35:38,696 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:35:42,816 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:35:47,817 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:35:52,818 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:35:52,920 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:35:53,695 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:35:53,695 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:35:53,695 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:35:56,703 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:35:56,704 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:35:56,704 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:35:56,704 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:35:56,901 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:35:58,705 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:35:59,901 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:36:03,707 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:36:08,695 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:36:08,695 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:36:08,695 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:36:08,811 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:36:13,811 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:36:18,813 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:36:22,920 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:36:23,695 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:36:23,695 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:36:23,737 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:36:23,822 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:36:28,823 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:36:29,725 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:36:29,726 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:36:29,726 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:36:29,727 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:36:29,911 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:36:31,912 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:36:34,728 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:36:38,695 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:36:38,695 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:36:38,696 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:36:39,816 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:36:44,817 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:36:49,818 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:36:52,921 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:36:53,695 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:36:53,695 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:36:53,695 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:36:55,782 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:37:00,783 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:37:02,859 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:37:02,860 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:37:02,860 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:37:02,860 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:37:02,922 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:37:05,902 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:37:05,922 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:37:08,695 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:37:08,695 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:37:08,695 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:37:11,855 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:37:16,855 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:37:21,856 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:37:22,921 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:37:23,696 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:37:23,697 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:37:23,697 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:37:27,796 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:37:32,797 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:37:35,864 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:37:35,865 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:37:35,865 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:37:35,865 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:37:35,932 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:37:37,865 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:37:37,933 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:37:38,695 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:37:38,696 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:37:38,696 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:37:43,799 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:37:48,800 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:37:52,922 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:37:53,696 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:37:53,696 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:37:53,737 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:37:54,785 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:37:59,786 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:38:04,787 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:38:08,696 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:38:08,696 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:38:08,696 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:38:08,819 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:38:08,860 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:38:08,860 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:38:08,861 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:38:08,942 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:38:09,862 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:38:11,944 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:38:14,862 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:38:19,863 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:38:22,922 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:38:23,696 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:38:23,696 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:38:23,696 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:38:25,785 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:38:30,787 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:38:35,788 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:38:38,696 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:38:38,697 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:38:38,737 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:38:40,756 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:38:40,756 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:38:40,757 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:38:40,757 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:38:40,952 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:38:41,757 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:38:41,952 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:38:46,758 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:38:51,759 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:38:52,923 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:38:53,696 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:38:53,696 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:38:53,698 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:38:56,772 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:39:01,773 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:39:06,774 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:39:08,696 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:39:08,696 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:39:08,698 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:39:11,859 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:39:12,872 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:39:12,873 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:39:12,873 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:39:12,873 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:39:12,962 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:39:13,962 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:39:16,914 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:39:21,916 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:39:22,923 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:39:23,696 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:39:23,696 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:39:23,698 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:39:27,830 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:39:32,831 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:39:37,832 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:39:38,696 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:39:38,697 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:39:38,697 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:39:42,895 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:39:44,863 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:39:44,864 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:39:44,864 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:39:44,864 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:39:44,971 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:39:45,972 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:39:48,865 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:39:52,924 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:39:53,697 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:39:53,697 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:39:53,697 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:39:54,813 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:39:59,814 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:40:04,815 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:40:08,696 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:40:08,698 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:40:08,737 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:40:10,812 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:40:15,812 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:40:17,018 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:40:17,018 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:40:17,019 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:40:17,019 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:40:17,982 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:40:19,982 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:40:21,020 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:40:22,924 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:40:23,697 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:40:23,697 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:40:23,699 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:40:26,823 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:40:31,824 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:40:36,825 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:40:38,698 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:40:38,698 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:40:38,698 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:40:41,833 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:40:46,834 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:40:49,189 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:40:49,190 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:40:49,190 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:40:49,190 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:40:49,992 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:40:51,993 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:40:52,234 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:40:52,925 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:40:53,697 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:40:53,697 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:40:53,699 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:40:57,843 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:41:02,844 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:41:07,845 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:41:08,697 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:41:08,697 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:41:08,698 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:41:13,794 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:41:18,795 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:41:20,883 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:41:20,884 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:41:20,884 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:41:20,885 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:41:21,002 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:41:22,002 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:41:22,928 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:41:23,697 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:41:23,697 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:41:23,698 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:41:23,903 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:41:28,904 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:41:33,905 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:41:38,697 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:41:38,698 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:41:38,741 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:41:39,814 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:41:44,815 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:41:49,816 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:41:52,591 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:41:52,592 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:41:52,592 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:41:52,592 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:41:52,927 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:41:53,013 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:41:53,697 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:41:53,698 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:41:53,698 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:41:54,013 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:41:54,834 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:41:59,835 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:42:04,836 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:42:08,697 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:42:08,698 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:42:08,698 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:42:10,809 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:42:15,810 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:42:20,811 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:42:22,927 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:42:23,698 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:42:23,699 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:42:23,741 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:42:24,447 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:42:24,448 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:42:24,448 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:42:24,449 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:42:25,024 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:42:26,025 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:42:26,449 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:42:31,450 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:42:36,451 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:42:38,698 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:42:38,699 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:42:38,699 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:42:41,834 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:42:46,835 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:42:51,835 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:42:52,928 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:42:53,698 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:42:53,699 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:42:53,699 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:42:56,466 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:42:56,467 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:42:56,467 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:42:56,468 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:42:57,036 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:42:57,510 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:42:58,037 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:43:02,511 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:43:07,512 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:43:08,698 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:43:08,698 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:43:08,699 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:43:12,908 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:43:17,908 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:43:22,910 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:43:22,929 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:43:23,699 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:43:23,699 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:43:23,699 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:43:28,413 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:43:28,414 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:43:28,414 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:43:28,415 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:43:28,415 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:43:29,047 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:43:30,047 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:43:33,416 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:43:38,416 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:43:38,699 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:43:38,699 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:43:38,701 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:43:43,793 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:43:48,793 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:43:52,929 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:43:53,699 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:43:53,699 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:43:53,741 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:43:53,867 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:43:58,867 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:44:00,235 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:44:00,236 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:44:00,236 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:44:00,237 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:44:01,057 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:44:02,057 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:44:04,238 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:44:08,699 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:44:08,700 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:44:08,701 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:44:09,879 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:44:14,879 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:44:19,880 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:44:22,930 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:44:23,699 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:44:23,699 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:44:23,702 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:44:25,870 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:44:30,870 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:44:32,122 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:44:32,123 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:44:32,123 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:44:32,124 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:44:33,066 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:44:34,067 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:44:36,171 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:44:38,699 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:44:38,700 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:44:38,700 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:44:41,854 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:44:46,855 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:44:51,856 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:44:52,930 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:44:53,699 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:44:53,700 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:44:53,700 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:44:57,811 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:45:02,812 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:45:04,087 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:45:04,088 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:45:04,088 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:45:04,089 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:45:05,076 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:45:06,076 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:45:08,090 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:45:08,700 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:45:08,700 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:45:08,700 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:45:13,794 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:45:18,795 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:45:22,931 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:45:23,700 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:45:23,701 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:45:23,741 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:45:23,846 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:45:28,847 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:45:33,848 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:45:36,067 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:45:36,068 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:45:36,068 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:45:36,069 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:45:36,089 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:45:38,090 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:45:38,701 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:45:38,701 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:45:38,702 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:45:38,867 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:45:43,868 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:45:48,869 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:45:52,932 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:45:53,700 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 05:45:53,701 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:45:53,701 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 05:45:54,821 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:45:59,822 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:46:04,823 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:46:07,863 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-02 05:46:07,863 DEBUG   SenderThread:854863 [sender.py:send():380] send: history
+2023-12-02 05:46:07,864 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: summary_record
+2023-12-02 05:46:07,864 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:46:07,907 DEBUG   SenderThread:854863 [sender.py:send():380] send: telemetry
+2023-12-02 05:46:07,907 DEBUG   SenderThread:854863 [sender.py:send():380] send: exit
+2023-12-02 05:46:07,907 INFO    SenderThread:854863 [sender.py:send_exit():585] handling exit code: 0
+2023-12-02 05:46:07,907 INFO    SenderThread:854863 [sender.py:send_exit():587] handling runtime: 975
+2023-12-02 05:46:07,908 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:46:07,908 INFO    SenderThread:854863 [sender.py:send_exit():593] send defer
+2023-12-02 05:46:07,908 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 05:46:07,909 INFO    HandlerThread:854863 [handler.py:handle_request_defer():172] handle defer: 0
+2023-12-02 05:46:07,909 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: defer
+2023-12-02 05:46:07,909 INFO    SenderThread:854863 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-12-02 05:46:07,909 INFO    SenderThread:854863 [sender.py:transition_state():613] send defer: 1
+2023-12-02 05:46:07,910 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 05:46:07,910 INFO    HandlerThread:854863 [handler.py:handle_request_defer():172] handle defer: 1
+2023-12-02 05:46:07,911 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: defer
+2023-12-02 05:46:07,911 INFO    SenderThread:854863 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-12-02 05:46:07,911 INFO    SenderThread:854863 [sender.py:transition_state():613] send defer: 2
+2023-12-02 05:46:07,911 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 05:46:07,911 INFO    HandlerThread:854863 [handler.py:handle_request_defer():172] handle defer: 2
+2023-12-02 05:46:07,911 INFO    HandlerThread:854863 [system_monitor.py:finish():203] Stopping system monitor
+2023-12-02 05:46:07,912 INFO    HandlerThread:854863 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-02 05:46:07,913 INFO    HandlerThread:854863 [interfaces.py:finish():202] Joined disk monitor
+2023-12-02 05:46:07,914 INFO    HandlerThread:854863 [interfaces.py:finish():202] Joined memory monitor
+2023-12-02 05:46:07,914 INFO    HandlerThread:854863 [interfaces.py:finish():202] Joined network monitor
+2023-12-02 05:46:07,915 DEBUG   SystemMonitor:854863 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-12-02 05:46:07,915 DEBUG   SystemMonitor:854863 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-12-02 05:46:07,918 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: defer
+2023-12-02 05:46:07,918 INFO    SenderThread:854863 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-12-02 05:46:07,918 INFO    SenderThread:854863 [sender.py:transition_state():613] send defer: 3
+2023-12-02 05:46:07,919 DEBUG   SenderThread:854863 [sender.py:send():380] send: stats
+2023-12-02 05:46:07,920 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 05:46:07,920 INFO    HandlerThread:854863 [handler.py:handle_request_defer():172] handle defer: 3
+2023-12-02 05:46:07,921 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: defer
+2023-12-02 05:46:07,921 INFO    SenderThread:854863 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-12-02 05:46:07,921 INFO    SenderThread:854863 [sender.py:transition_state():613] send defer: 4
+2023-12-02 05:46:07,921 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 05:46:07,922 INFO    HandlerThread:854863 [handler.py:handle_request_defer():172] handle defer: 4
+2023-12-02 05:46:07,922 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: defer
+2023-12-02 05:46:07,922 INFO    SenderThread:854863 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-12-02 05:46:07,923 INFO    SenderThread:854863 [sender.py:transition_state():613] send defer: 5
+2023-12-02 05:46:07,923 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 05:46:07,923 INFO    HandlerThread:854863 [handler.py:handle_request_defer():172] handle defer: 5
+2023-12-02 05:46:07,924 DEBUG   SenderThread:854863 [sender.py:send():380] send: summary
+2023-12-02 05:46:07,925 INFO    SenderThread:854863 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 05:46:07,926 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: defer
+2023-12-02 05:46:07,926 INFO    SenderThread:854863 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-12-02 05:46:07,926 INFO    SenderThread:854863 [sender.py:transition_state():613] send defer: 6
+2023-12-02 05:46:07,927 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 05:46:07,927 INFO    HandlerThread:854863 [handler.py:handle_request_defer():172] handle defer: 6
+2023-12-02 05:46:07,927 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: defer
+2023-12-02 05:46:07,928 INFO    SenderThread:854863 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-12-02 05:46:07,933 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 05:46:08,099 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:46:08,111 INFO    SenderThread:854863 [sender.py:transition_state():613] send defer: 7
+2023-12-02 05:46:08,111 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 05:46:08,112 INFO    HandlerThread:854863 [handler.py:handle_request_defer():172] handle defer: 7
+2023-12-02 05:46:08,112 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: defer
+2023-12-02 05:46:08,112 INFO    SenderThread:854863 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-12-02 05:46:08,864 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-02 05:46:09,100 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/config.yaml
+2023-12-02 05:46:09,787 INFO    SenderThread:854863 [sender.py:transition_state():613] send defer: 8
+2023-12-02 05:46:09,787 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: poll_exit
+2023-12-02 05:46:09,788 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 05:46:09,789 INFO    HandlerThread:854863 [handler.py:handle_request_defer():172] handle defer: 8
+2023-12-02 05:46:09,790 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: defer
+2023-12-02 05:46:09,790 INFO    SenderThread:854863 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-12-02 05:46:09,790 INFO    SenderThread:854863 [job_builder.py:build():298] Attempting to build job artifact
+2023-12-02 05:46:09,791 INFO    SenderThread:854863 [job_builder.py:_get_source_type():439] no source found
+2023-12-02 05:46:09,791 INFO    SenderThread:854863 [sender.py:transition_state():613] send defer: 9
+2023-12-02 05:46:09,792 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 05:46:09,792 INFO    HandlerThread:854863 [handler.py:handle_request_defer():172] handle defer: 9
+2023-12-02 05:46:09,793 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: defer
+2023-12-02 05:46:09,793 INFO    SenderThread:854863 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-12-02 05:46:09,793 INFO    SenderThread:854863 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-12-02 05:46:09,865 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-02 05:46:10,101 INFO    Thread-12 :854863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:46:10,103 INFO    SenderThread:854863 [dir_watcher.py:finish():388] scan: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files
+2023-12-02 05:46:10,103 INFO    SenderThread:854863 [dir_watcher.py:finish():402] scan save: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/conda-environment.yaml conda-environment.yaml
+2023-12-02 05:46:10,104 INFO    SenderThread:854863 [dir_watcher.py:finish():402] scan save: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/config.yaml config.yaml
+2023-12-02 05:46:10,104 INFO    SenderThread:854863 [dir_watcher.py:finish():402] scan save: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-metadata.json wandb-metadata.json
+2023-12-02 05:46:10,104 INFO    SenderThread:854863 [dir_watcher.py:finish():402] scan save: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/requirements.txt requirements.txt
+2023-12-02 05:46:10,105 INFO    SenderThread:854863 [dir_watcher.py:finish():402] scan save: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log output.log
+2023-12-02 05:46:10,105 INFO    SenderThread:854863 [dir_watcher.py:finish():402] scan save: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json wandb-summary.json
+2023-12-02 05:46:10,105 INFO    SenderThread:854863 [sender.py:transition_state():613] send defer: 10
+2023-12-02 05:46:10,106 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: poll_exit
+2023-12-02 05:46:10,112 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 05:46:10,124 INFO    HandlerThread:854863 [handler.py:handle_request_defer():172] handle defer: 10
+2023-12-02 05:46:10,139 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: defer
+2023-12-02 05:46:10,139 INFO    SenderThread:854863 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-12-02 05:46:10,139 INFO    SenderThread:854863 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-02 05:46:10,436 INFO    wandb-upload_0:854863 [upload_job.py:push():131] Uploaded file /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/config.yaml
+2023-12-02 05:46:10,594 INFO    wandb-upload_1:854863 [upload_job.py:push():131] Uploaded file /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/conda-environment.yaml
+2023-12-02 05:46:10,598 INFO    wandb-upload_3:854863 [upload_job.py:push():131] Uploaded file /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/output.log
+2023-12-02 05:46:10,600 INFO    wandb-upload_4:854863 [upload_job.py:push():131] Uploaded file /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/wandb-summary.json
+2023-12-02 05:46:10,603 INFO    wandb-upload_2:854863 [upload_job.py:push():131] Uploaded file /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/files/requirements.txt
+2023-12-02 05:46:10,804 INFO    Thread-11 :854863 [sender.py:transition_state():613] send defer: 11
+2023-12-02 05:46:10,804 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 05:46:10,805 INFO    HandlerThread:854863 [handler.py:handle_request_defer():172] handle defer: 11
+2023-12-02 05:46:10,806 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: defer
+2023-12-02 05:46:10,806 INFO    SenderThread:854863 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-12-02 05:46:10,806 INFO    SenderThread:854863 [file_pusher.py:join():181] waiting for file pusher
+2023-12-02 05:46:10,806 INFO    SenderThread:854863 [sender.py:transition_state():613] send defer: 12
+2023-12-02 05:46:10,807 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 05:46:10,807 INFO    HandlerThread:854863 [handler.py:handle_request_defer():172] handle defer: 12
+2023-12-02 05:46:10,808 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: defer
+2023-12-02 05:46:10,808 INFO    SenderThread:854863 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-12-02 05:46:10,809 INFO    SenderThread:854863 [file_stream.py:finish():595] file stream finish called
+2023-12-02 05:46:10,866 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-02 05:46:11,108 INFO    SenderThread:854863 [file_stream.py:finish():599] file stream finish is done
+2023-12-02 05:46:11,108 INFO    SenderThread:854863 [sender.py:transition_state():613] send defer: 13
+2023-12-02 05:46:11,109 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: poll_exit
+2023-12-02 05:46:11,109 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 05:46:11,109 INFO    HandlerThread:854863 [handler.py:handle_request_defer():172] handle defer: 13
+2023-12-02 05:46:11,111 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: defer
+2023-12-02 05:46:11,111 INFO    SenderThread:854863 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-12-02 05:46:11,111 INFO    SenderThread:854863 [sender.py:transition_state():613] send defer: 14
+2023-12-02 05:46:11,112 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 05:46:11,112 INFO    HandlerThread:854863 [handler.py:handle_request_defer():172] handle defer: 14
+2023-12-02 05:46:11,114 DEBUG   SenderThread:854863 [sender.py:send():380] send: final
+2023-12-02 05:46:11,114 DEBUG   SenderThread:854863 [sender.py:send():380] send: footer
+2023-12-02 05:46:11,114 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: defer
+2023-12-02 05:46:11,114 INFO    SenderThread:854863 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-12-02 05:46:11,116 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-02 05:46:11,118 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: poll_exit
+2023-12-02 05:46:11,120 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 05:46:11,122 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: server_info
+2023-12-02 05:46:11,123 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: get_summary
+2023-12-02 05:46:11,125 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: server_info
+2023-12-02 05:46:11,131 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: sampled_history
+2023-12-02 05:46:11,132 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: job_info
+2023-12-02 05:46:11,194 DEBUG   SenderThread:854863 [sender.py:send_request():407] send_request: job_info
+2023-12-02 05:46:11,196 DEBUG   HandlerThread:854863 [handler.py:handle_request():146] handle_request: shutdown
+2023-12-02 05:46:11,196 INFO    HandlerThread:854863 [handler.py:finish():866] shutting down handler
+2023-12-02 05:46:12,133 INFO    WriterThread:854863 [datastore.py:close():294] close: /home/frankyu/Documents/resnet18/wandb/run-20231202_052952-dctgoma1/run-dctgoma1.wandb
+2023-12-02 05:46:12,195 INFO    SenderThread:854863 [sender.py:finish():1536] shutting down sender
+2023-12-02 05:46:12,195 INFO    SenderThread:854863 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-02 05:46:12,195 INFO    SenderThread:854863 [file_pusher.py:join():181] waiting for file pusher

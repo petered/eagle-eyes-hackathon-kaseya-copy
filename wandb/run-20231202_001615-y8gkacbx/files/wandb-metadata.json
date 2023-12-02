@@ -1,0 +1,154 @@
+{
+    "os": "Linux-5.4.0-135-generic-x86_64-with-glibc2.17",
+    "python": "3.8.18",
+    "heartbeatAt": "2023-12-02T00:16:16.776773",
+    "startedAt": "2023-12-02T00:16:15.641848",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "host": "hollyburn",
+    "username": "frankyu",
+    "executable": "/scratch-ssd/frankyu/anaconda3/envs/resnet/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 781.6508749999999,
+        "min": 800.0,
+        "max": 5700.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 613.447,
+            "min": 800.0,
+            "max": 6500.0
+        },
+        {
+            "current": 600.855,
+            "min": 800.0,
+            "max": 6500.0
+        },
+        {
+            "current": 631.879,
+            "min": 800.0,
+            "max": 6500.0
+        },
+        {
+            "current": 616.746,
+            "min": 800.0,
+            "max": 6500.0
+        },
+        {
+            "current": 804.961,
+            "min": 800.0,
+            "max": 6700.0
+        },
+        {
+            "current": 700.0,
+            "min": 800.0,
+            "max": 6700.0
+        },
+        {
+            "current": 732.454,
+            "min": 800.0,
+            "max": 6700.0
+        },
+        {
+            "current": 671.964,
+            "min": 800.0,
+            "max": 6700.0
+        },
+        {
+            "current": 600.785,
+            "min": 800.0,
+            "max": 6500.0
+        },
+        {
+            "current": 600.107,
+            "min": 800.0,
+            "max": 6500.0
+        },
+        {
+            "current": 747.579,
+            "min": 800.0,
+            "max": 6500.0
+        },
+        {
+            "current": 599.152,
+            "min": 800.0,
+            "max": 6500.0
+        },
+        {
+            "current": 751.291,
+            "min": 800.0,
+            "max": 6500.0
+        },
+        {
+            "current": 599.704,
+            "min": 800.0,
+            "max": 6500.0
+        },
+        {
+            "current": 600.51,
+            "min": 800.0,
+            "max": 6500.0
+        },
+        {
+            "current": 600.397,
+            "min": 800.0,
+            "max": 6500.0
+        },
+        {
+            "current": 799.985,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 799.894,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 799.977,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 798.625,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 800.258,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 798.979,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 799.886,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 799.215,
+            "min": 800.0,
+            "max": 4000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 97.87200164794922,
+            "used": 51.564693450927734
+        }
+    },
+    "memory": {
+        "total": 62.60167694091797
+    }
+}

@@ -1,0 +1,179 @@
+2023-12-02 20:16:09,279 INFO    StreamThr :942228 [internal.py:wandb_internal():86] W&B internal server running at pid: 942228, started at: 2023-12-02 20:16:09.278885
+2023-12-02 20:16:09,280 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: status
+2023-12-02 20:16:09,281 INFO    WriterThread:942228 [datastore.py:open_for_write():85] open: /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/run-zkp4m92y.wandb
+2023-12-02 20:16:09,282 DEBUG   SenderThread:942228 [sender.py:send():380] send: header
+2023-12-02 20:16:09,282 DEBUG   SenderThread:942228 [sender.py:send():380] send: run
+2023-12-02 20:16:09,533 INFO    SenderThread:942228 [dir_watcher.py:__init__():211] watching files in: /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files
+2023-12-02 20:16:09,533 INFO    SenderThread:942228 [sender.py:_start_run_threads():1124] run started: zkp4m92y with start time 1701548169.278732
+2023-12-02 20:16:09,537 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: check_version
+2023-12-02 20:16:09,537 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: check_version
+2023-12-02 20:16:09,677 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: run_start
+2023-12-02 20:16:09,685 ERROR   HandlerThread:942228 [gpu.py:is_available():381] Error initializing NVML: RM has detected an NVML/RM version mismatch.
+2023-12-02 20:16:09,685 DEBUG   HandlerThread:942228 [system_info.py:__init__():32] System info init
+2023-12-02 20:16:09,685 DEBUG   HandlerThread:942228 [system_info.py:__init__():47] System info init done
+2023-12-02 20:16:09,685 INFO    HandlerThread:942228 [system_monitor.py:start():194] Starting system monitor
+2023-12-02 20:16:09,685 INFO    SystemMonitor:942228 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-12-02 20:16:09,686 INFO    HandlerThread:942228 [system_monitor.py:probe():214] Collecting system info
+2023-12-02 20:16:09,687 INFO    SystemMonitor:942228 [interfaces.py:start():190] Started cpu monitoring
+2023-12-02 20:16:09,688 INFO    SystemMonitor:942228 [interfaces.py:start():190] Started disk monitoring
+2023-12-02 20:16:09,690 INFO    SystemMonitor:942228 [interfaces.py:start():190] Started memory monitoring
+2023-12-02 20:16:09,692 INFO    SystemMonitor:942228 [interfaces.py:start():190] Started network monitoring
+2023-12-02 20:16:09,736 DEBUG   HandlerThread:942228 [system_info.py:probe():196] Probing system
+2023-12-02 20:16:09,744 DEBUG   HandlerThread:942228 [gitlib.py:_init_repo():56] git repository is invalid
+2023-12-02 20:16:09,744 DEBUG   HandlerThread:942228 [system_info.py:probe():244] Probing system done
+2023-12-02 20:16:09,745 DEBUG   HandlerThread:942228 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-135-generic-x86_64-with-glibc2.17', 'python': '3.8.18', 'heartbeatAt': '2023-12-02T20:16:09.736757', 'startedAt': '2023-12-02T20:16:09.274446', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'host': 'hollyburn', 'username': 'frankyu', 'executable': '/scratch-ssd/frankyu/anaconda3/envs/resnet/bin/python', 'cpu_count': 16, 'cpu_count_logical': 24, 'cpu_freq': {'current': 892.581125, 'min': 800.0, 'max': 5700.0}, 'cpu_freq_per_core': [{'current': 644.898, 'min': 800.0, 'max': 6500.0}, {'current': 633.628, 'min': 800.0, 'max': 6500.0}, {'current': 658.977, 'min': 800.0, 'max': 6500.0}, {'current': 684.704, 'min': 800.0, 'max': 6500.0}, {'current': 755.501, 'min': 800.0, 'max': 6700.0}, {'current': 700.765, 'min': 800.0, 'max': 6700.0}, {'current': 727.353, 'min': 800.0, 'max': 6700.0}, {'current': 677.845, 'min': 800.0, 'max': 6700.0}, {'current': 643.669, 'min': 800.0, 'max': 6500.0}, {'current': 602.96, 'min': 800.0, 'max': 6500.0}, {'current': 600.118, 'min': 800.0, 'max': 6500.0}, {'current': 599.703, 'min': 800.0, 'max': 6500.0}, {'current': 636.664, 'min': 800.0, 'max': 6500.0}, {'current': 643.678, 'min': 800.0, 'max': 6500.0}, {'current': 789.3, 'min': 800.0, 'max': 6500.0}, {'current': 600.291, 'min': 800.0, 'max': 6500.0}, {'current': 800.186, 'min': 800.0, 'max': 4000.0}, {'current': 800.212, 'min': 800.0, 'max': 4000.0}, {'current': 799.857, 'min': 800.0, 'max': 4000.0}, {'current': 801.014, 'min': 800.0, 'max': 4000.0}, {'current': 800.327, 'min': 800.0, 'max': 4000.0}, {'current': 800.212, 'min': 800.0, 'max': 4000.0}, {'current': 800.539, 'min': 800.0, 'max': 4000.0}, {'current': 799.724, 'min': 800.0, 'max': 4000.0}], 'disk': {'/': {'total': 97.87200164794922, 'used': 56.81886672973633}}, 'memory': {'total': 62.60167694091797}}
+2023-12-02 20:16:09,745 INFO    HandlerThread:942228 [system_monitor.py:probe():224] Finished collecting system info
+2023-12-02 20:16:09,745 INFO    HandlerThread:942228 [system_monitor.py:probe():227] Publishing system info
+2023-12-02 20:16:09,745 DEBUG   HandlerThread:942228 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-02 20:16:09,745 DEBUG   HandlerThread:942228 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-02 20:16:09,745 DEBUG   HandlerThread:942228 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-12-02 20:16:10,473 DEBUG   HandlerThread:942228 [system_info.py:_save_conda():87] Saving conda packages done
+2023-12-02 20:16:10,473 INFO    HandlerThread:942228 [system_monitor.py:probe():229] Finished publishing system info
+2023-12-02 20:16:10,475 DEBUG   SenderThread:942228 [sender.py:send():380] send: files
+2023-12-02 20:16:10,475 INFO    SenderThread:942228 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2023-12-02 20:16:10,477 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-02 20:16:10,477 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: stop_status
+2023-12-02 20:16:10,479 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 20:16:10,534 INFO    Thread-12 :942228 [dir_watcher.py:_on_file_created():271] file/dir created: /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/wandb-metadata.json
+2023-12-02 20:16:10,535 INFO    Thread-12 :942228 [dir_watcher.py:_on_file_created():271] file/dir created: /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/conda-environment.yaml
+2023-12-02 20:16:10,535 INFO    Thread-12 :942228 [dir_watcher.py:_on_file_created():271] file/dir created: /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/requirements.txt
+2023-12-02 20:16:10,677 DEBUG   SenderThread:942228 [sender.py:send():380] send: telemetry
+2023-12-02 20:16:10,870 INFO    wandb-upload_0:942228 [upload_job.py:push():131] Uploaded file /tmp/tmpmil6u7y6wandb/tj9lnpap-wandb-metadata.json
+2023-12-02 20:16:14,678 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 20:16:19,678 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 20:16:21,828 DEBUG   SenderThread:942228 [sender.py:send():380] send: exit
+2023-12-02 20:16:21,828 INFO    SenderThread:942228 [sender.py:send_exit():585] handling exit code: 255
+2023-12-02 20:16:21,828 INFO    SenderThread:942228 [sender.py:send_exit():587] handling runtime: 12
+2023-12-02 20:16:21,829 INFO    SenderThread:942228 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 20:16:21,829 INFO    SenderThread:942228 [sender.py:send_exit():593] send defer
+2023-12-02 20:16:21,829 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 20:16:21,829 INFO    HandlerThread:942228 [handler.py:handle_request_defer():172] handle defer: 0
+2023-12-02 20:16:21,829 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: defer
+2023-12-02 20:16:21,829 INFO    SenderThread:942228 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-12-02 20:16:21,830 INFO    SenderThread:942228 [sender.py:transition_state():613] send defer: 1
+2023-12-02 20:16:21,830 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 20:16:21,830 INFO    HandlerThread:942228 [handler.py:handle_request_defer():172] handle defer: 1
+2023-12-02 20:16:21,830 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: defer
+2023-12-02 20:16:21,830 INFO    SenderThread:942228 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-12-02 20:16:21,830 INFO    SenderThread:942228 [sender.py:transition_state():613] send defer: 2
+2023-12-02 20:16:21,830 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 20:16:21,830 INFO    HandlerThread:942228 [handler.py:handle_request_defer():172] handle defer: 2
+2023-12-02 20:16:21,830 INFO    HandlerThread:942228 [system_monitor.py:finish():203] Stopping system monitor
+2023-12-02 20:16:21,830 DEBUG   SystemMonitor:942228 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-12-02 20:16:21,830 INFO    HandlerThread:942228 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-02 20:16:21,830 DEBUG   SystemMonitor:942228 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-12-02 20:16:21,830 INFO    HandlerThread:942228 [interfaces.py:finish():202] Joined disk monitor
+2023-12-02 20:16:21,830 DEBUG   SystemMonitor:942228 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-12-02 20:16:21,830 INFO    HandlerThread:942228 [interfaces.py:finish():202] Joined memory monitor
+2023-12-02 20:16:21,831 INFO    HandlerThread:942228 [interfaces.py:finish():202] Joined network monitor
+2023-12-02 20:16:21,831 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: defer
+2023-12-02 20:16:21,831 INFO    SenderThread:942228 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-12-02 20:16:21,831 INFO    SenderThread:942228 [sender.py:transition_state():613] send defer: 3
+2023-12-02 20:16:21,831 DEBUG   SenderThread:942228 [sender.py:send():380] send: stats
+2023-12-02 20:16:21,831 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 20:16:21,831 INFO    HandlerThread:942228 [handler.py:handle_request_defer():172] handle defer: 3
+2023-12-02 20:16:21,831 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: defer
+2023-12-02 20:16:21,831 INFO    SenderThread:942228 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-12-02 20:16:21,831 INFO    SenderThread:942228 [sender.py:transition_state():613] send defer: 4
+2023-12-02 20:16:21,831 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 20:16:21,831 INFO    HandlerThread:942228 [handler.py:handle_request_defer():172] handle defer: 4
+2023-12-02 20:16:21,831 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: defer
+2023-12-02 20:16:21,831 INFO    SenderThread:942228 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-12-02 20:16:21,831 INFO    SenderThread:942228 [sender.py:transition_state():613] send defer: 5
+2023-12-02 20:16:21,831 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 20:16:21,831 INFO    HandlerThread:942228 [handler.py:handle_request_defer():172] handle defer: 5
+2023-12-02 20:16:21,831 DEBUG   SenderThread:942228 [sender.py:send():380] send: summary
+2023-12-02 20:16:21,832 INFO    SenderThread:942228 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-02 20:16:21,832 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: defer
+2023-12-02 20:16:21,832 INFO    SenderThread:942228 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-12-02 20:16:21,832 INFO    SenderThread:942228 [sender.py:transition_state():613] send defer: 6
+2023-12-02 20:16:21,832 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 20:16:21,832 INFO    HandlerThread:942228 [handler.py:handle_request_defer():172] handle defer: 6
+2023-12-02 20:16:21,832 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: defer
+2023-12-02 20:16:21,832 INFO    SenderThread:942228 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-12-02 20:16:21,833 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: status_report
+2023-12-02 20:16:21,924 INFO    SenderThread:942228 [sender.py:transition_state():613] send defer: 7
+2023-12-02 20:16:21,925 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 20:16:21,925 INFO    HandlerThread:942228 [handler.py:handle_request_defer():172] handle defer: 7
+2023-12-02 20:16:21,926 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: defer
+2023-12-02 20:16:21,926 INFO    SenderThread:942228 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-12-02 20:16:22,538 INFO    Thread-12 :942228 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/config.yaml
+2023-12-02 20:16:22,539 INFO    Thread-12 :942228 [dir_watcher.py:_on_file_created():271] file/dir created: /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/wandb-summary.json
+2023-12-02 20:16:22,539 INFO    Thread-12 :942228 [dir_watcher.py:_on_file_created():271] file/dir created: /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/output.log
+2023-12-02 20:16:22,828 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-02 20:16:23,838 INFO    SenderThread:942228 [sender.py:transition_state():613] send defer: 8
+2023-12-02 20:16:23,838 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: poll_exit
+2023-12-02 20:16:23,838 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 20:16:23,839 INFO    HandlerThread:942228 [handler.py:handle_request_defer():172] handle defer: 8
+2023-12-02 20:16:23,839 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: defer
+2023-12-02 20:16:23,840 INFO    SenderThread:942228 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-12-02 20:16:23,840 INFO    SenderThread:942228 [job_builder.py:build():298] Attempting to build job artifact
+2023-12-02 20:16:23,840 INFO    SenderThread:942228 [job_builder.py:_get_source_type():439] no source found
+2023-12-02 20:16:23,841 INFO    SenderThread:942228 [sender.py:transition_state():613] send defer: 9
+2023-12-02 20:16:23,841 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 20:16:23,841 INFO    HandlerThread:942228 [handler.py:handle_request_defer():172] handle defer: 9
+2023-12-02 20:16:23,841 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: defer
+2023-12-02 20:16:23,841 INFO    SenderThread:942228 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-12-02 20:16:23,842 INFO    SenderThread:942228 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-12-02 20:16:24,539 INFO    Thread-12 :942228 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/output.log
+2023-12-02 20:16:24,541 INFO    SenderThread:942228 [dir_watcher.py:finish():388] scan: /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files
+2023-12-02 20:16:24,541 INFO    SenderThread:942228 [dir_watcher.py:finish():402] scan save: /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/conda-environment.yaml conda-environment.yaml
+2023-12-02 20:16:24,542 INFO    SenderThread:942228 [dir_watcher.py:finish():402] scan save: /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/config.yaml config.yaml
+2023-12-02 20:16:24,547 INFO    SenderThread:942228 [dir_watcher.py:finish():402] scan save: /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/wandb-metadata.json wandb-metadata.json
+2023-12-02 20:16:24,547 INFO    SenderThread:942228 [dir_watcher.py:finish():402] scan save: /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/requirements.txt requirements.txt
+2023-12-02 20:16:24,547 INFO    SenderThread:942228 [dir_watcher.py:finish():402] scan save: /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/output.log output.log
+2023-12-02 20:16:24,547 INFO    SenderThread:942228 [dir_watcher.py:finish():402] scan save: /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/wandb-summary.json wandb-summary.json
+2023-12-02 20:16:24,554 INFO    SenderThread:942228 [sender.py:transition_state():613] send defer: 10
+2023-12-02 20:16:24,563 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 20:16:24,564 INFO    HandlerThread:942228 [handler.py:handle_request_defer():172] handle defer: 10
+2023-12-02 20:16:24,573 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: defer
+2023-12-02 20:16:24,573 INFO    SenderThread:942228 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-12-02 20:16:24,573 INFO    SenderThread:942228 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-02 20:16:24,815 INFO    wandb-upload_0:942228 [upload_job.py:push():131] Uploaded file /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/conda-environment.yaml
+2023-12-02 20:16:24,828 INFO    wandb-upload_1:942228 [upload_job.py:push():131] Uploaded file /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/config.yaml
+2023-12-02 20:16:24,927 INFO    wandb-upload_4:942228 [upload_job.py:push():131] Uploaded file /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/wandb-summary.json
+2023-12-02 20:16:24,933 INFO    wandb-upload_3:942228 [upload_job.py:push():131] Uploaded file /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/output.log
+2023-12-02 20:16:24,937 INFO    wandb-upload_2:942228 [upload_job.py:push():131] Uploaded file /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/files/requirements.txt
+2023-12-02 20:16:25,138 INFO    Thread-11 :942228 [sender.py:transition_state():613] send defer: 11
+2023-12-02 20:16:25,139 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 20:16:25,140 INFO    HandlerThread:942228 [handler.py:handle_request_defer():172] handle defer: 11
+2023-12-02 20:16:25,141 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: defer
+2023-12-02 20:16:25,141 INFO    SenderThread:942228 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-12-02 20:16:25,141 INFO    SenderThread:942228 [file_pusher.py:join():181] waiting for file pusher
+2023-12-02 20:16:25,141 INFO    SenderThread:942228 [sender.py:transition_state():613] send defer: 12
+2023-12-02 20:16:25,141 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 20:16:25,142 INFO    HandlerThread:942228 [handler.py:handle_request_defer():172] handle defer: 12
+2023-12-02 20:16:25,142 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: defer
+2023-12-02 20:16:25,143 INFO    SenderThread:942228 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-12-02 20:16:25,143 INFO    SenderThread:942228 [file_stream.py:finish():595] file stream finish called
+2023-12-02 20:16:25,235 INFO    SenderThread:942228 [file_stream.py:finish():599] file stream finish is done
+2023-12-02 20:16:25,235 INFO    SenderThread:942228 [sender.py:transition_state():613] send defer: 13
+2023-12-02 20:16:25,236 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 20:16:25,236 INFO    HandlerThread:942228 [handler.py:handle_request_defer():172] handle defer: 13
+2023-12-02 20:16:25,237 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: defer
+2023-12-02 20:16:25,237 INFO    SenderThread:942228 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-12-02 20:16:25,237 INFO    SenderThread:942228 [sender.py:transition_state():613] send defer: 14
+2023-12-02 20:16:25,238 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: defer
+2023-12-02 20:16:25,238 INFO    HandlerThread:942228 [handler.py:handle_request_defer():172] handle defer: 14
+2023-12-02 20:16:25,239 DEBUG   SenderThread:942228 [sender.py:send():380] send: final
+2023-12-02 20:16:25,240 DEBUG   SenderThread:942228 [sender.py:send():380] send: footer
+2023-12-02 20:16:25,240 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: defer
+2023-12-02 20:16:25,240 INFO    SenderThread:942228 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-12-02 20:16:25,241 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-02 20:16:25,242 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: poll_exit
+2023-12-02 20:16:25,243 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: server_info
+2023-12-02 20:16:25,244 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: server_info
+2023-12-02 20:16:25,249 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: get_summary
+2023-12-02 20:16:25,250 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: sampled_history
+2023-12-02 20:16:25,250 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-02 20:16:25,251 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: job_info
+2023-12-02 20:16:25,311 DEBUG   SenderThread:942228 [sender.py:send_request():407] send_request: job_info
+2023-12-02 20:16:25,312 INFO    MainThread:942228 [wandb_run.py:_footer_history_summary_info():3760] rendering history
+2023-12-02 20:16:25,312 INFO    MainThread:942228 [wandb_run.py:_footer_history_summary_info():3792] rendering summary
+2023-12-02 20:16:25,312 INFO    MainThread:942228 [wandb_run.py:_footer_sync_info():3719] logging synced files
+2023-12-02 20:16:25,313 DEBUG   HandlerThread:942228 [handler.py:handle_request():146] handle_request: shutdown
+2023-12-02 20:16:25,314 INFO    HandlerThread:942228 [handler.py:finish():866] shutting down handler
+2023-12-02 20:16:26,252 INFO    WriterThread:942228 [datastore.py:close():294] close: /home/frankyu/Documents/resnet18/wandb/run-20231202_201609-zkp4m92y/run-zkp4m92y.wandb
+2023-12-02 20:16:26,311 INFO    SenderThread:942228 [sender.py:finish():1536] shutting down sender
+2023-12-02 20:16:26,312 INFO    SenderThread:942228 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-02 20:16:26,312 INFO    SenderThread:942228 [file_pusher.py:join():181] waiting for file pusher
