@@ -30,7 +30,7 @@ model = models.resnet18(pretrained=True)  # Replace with your model class
 # Modify the last layer of the model
 num_classes = 2 # replace with the number of classes in your dataset
 model.fc = torch.nn.Linear(model.fc.in_features, num_classes)
-model.load_state_dict(torch.load('model-restnet18-4010.pth'))  # Load the saved model
+model.load_state_dict(torch.load('model-restnet50-1005.pth'))  # Load the saved model
 model.eval()  # Set the model to evaluation mode
 
 
