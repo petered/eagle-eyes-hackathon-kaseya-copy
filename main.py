@@ -5,15 +5,15 @@ from torchvision.transforms import transforms
 from torch.utils.data import DataLoader
 import wandb
 
-model_name = "model-resnet18-4010.pth"
-first_stage_epoch = 40
-second_stage_epoch = 10
+model_name = "model-resnet50-1005+2005.pth"
+first_stage_epoch = 20
+second_stage_epoch = 5
 
 
 
 
 # Load the pre-trained ResNet-18 model
-model = models.resnet18(pretrained=True)
+model = models.resnet50(pretrained=True)
 
 
 # Freeze all the pre-trained layers
@@ -48,6 +48,7 @@ val_loader = DataLoader(val_dataset, batch_size=32, shuffle=False)
 criterion = torch.nn.CrossEntropyLoss()
 optimizer = torch.optim.SGD(model.fc.parameters(), lr=0.001, momentum=0.9)
 
+model.load_state_dict(torch.load('model-resnet50-1005.pth'))
 
 def train(model, train_loader, val_loader, criterion, optimizer, num_epochs):
     # Initialize wandb

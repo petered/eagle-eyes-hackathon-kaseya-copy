@@ -7,8 +7,8 @@ from torch.utils.data import DataLoader
 import wandb
 
 
-model_name = "model-resnet50-1005.pth"
-first_stage_epoch = 10
+model_name = "model_new-resnet50-3005.pth"
+first_stage_epoch = 30
 second_stage_epoch = 5
 
 
@@ -27,6 +27,8 @@ for param in model.parameters():
 num_classes = 2 # replace with the number of classes in your dataset
 model.fc = torch.nn.Linear(model.fc.in_features, num_classes)
 
+#optional add on training
+#model.load_state_dict(torch.load("model-resnet50-1005.pth"))
 
 # Define the transformations to apply to the images
 transform = transforms.Compose([

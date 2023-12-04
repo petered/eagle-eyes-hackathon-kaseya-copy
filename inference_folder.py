@@ -6,14 +6,15 @@ import os
 
 height = 100
 width = 100
-model_name = 'model-resnet18-2020.pth'
+model_name = 'model-resnet50-1005.pth'
 
 def process_image(image_path):
     # Define the same transforms as used during training
     transform = transforms.Compose([
-        transforms.Resize((height, width)),  # Replace with actual size
+        transforms.Resize((height, width)),
+        transforms.CenterCrop(224),  # Replace with actual size
         transforms.ToTensor(),
-        # Add any other transformations used during training
+        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
     ])
     input_image = Image.open(image_path)
     input_tensor = transform(input_image)
@@ -23,7 +24,7 @@ def process_image(image_path):
 folder_path = './test'
 image_paths = [os.path.join(folder_path, f) for f in os.listdir(folder_path) if f.endswith(('.png', '.jpg', '.jpeg'))]
 
-model = models.resnet18(pretrained=True)
+model = models.resnet50(pretrained=True)
 num_classes = 2  # Replace with your number of classes
 model.fc = torch.nn.Linear(model.fc.in_features, num_classes)
 model.load_state_dict(torch.load(model_name))
