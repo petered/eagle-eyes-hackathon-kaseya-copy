@@ -1,4 +1,5 @@
 from comet_ml import Experiment
+import comet_ml
 import torch
 import torchvision.models as models
 from torchvision.datasets import ImageFolder
@@ -7,15 +8,15 @@ from torch.utils.data import DataLoader
 import wandb
 
 
-model_name = "model_new-resnet50-3005.pth"
-first_stage_epoch = 30
+model_name = "model-CC-resnet50-0505.pth"
+first_stage_epoch = 5
 second_stage_epoch = 5
 
 
 
 
 # Load the pre-trained ResNet-18 model
-model = models.resnet50(pretrained=True)
+model = models.resnet50(pretrained=False)
 
 
 # Freeze all the pre-trained layers
@@ -55,9 +56,10 @@ optimizer = torch.optim.SGD(model.fc.parameters(), lr=0.001, momentum=0.9)
 
 def train(model, train_loader, val_loader, criterion, optimizer, num_epochs):
     # Initialize wandb
-    experiment = Experiment(api_key="27oTr1zJI8vAT8xBfzAkQYB7I", project_name="eagle_resnet", workspace="yyrebuilt")
-    experiment.set_name(model_name)
-
+    #experiment = Experiment(api_key="27oTr1zJI8vAT8xBfzAkQYB7I", project_name="eagle_resnet", workspace="yyrebuilt")
+    #experiment.set_name(model_name)
+    comet_ml.init(project_name="running-offline")
+    experiment = comet_ml.OfflineExperiment()
     # Train the model for the specified number of epochs
     for epoch in range(num_epochs):
         # Set the model to train mode
