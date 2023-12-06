@@ -15,7 +15,6 @@ The pipeline is displayed below:
     conda create -n eagle_eyes_hackathon python=3.10
     conda activate eagle_eyes_hackathon
     pip install -r requirements.txt
-
 ```
 
 # Dataset Prep
@@ -41,12 +40,15 @@ Some test samples are in the folder /test
 Run 
 ```
 python inference_folder.py
-``` to inference on all the images in a folder
+``` 
+to inference on all the images in a folder
 
 Or Run 
 ```
 python inference.py
-``` to inference on a single image
+
+``` 
+to inference on a single image
 
 
 
